@@ -13,23 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/home','HomeController@index')->name('home');
 
-Route::get('/corso', function () {
-    return view('corso');
-})->name('corso');//devo fare l'identificatore per usare le config Named Routes
+Route::get('/corso', 'CorsoController@index')->name('corso');//devo fare l'identificatore per usare le config Named Routes
 
-Route::get('/dopoilcorso', function () {
-    return view('dopoilcorso');
-})->name('dopoilcorso');
+Route::get('/dopoilcorso', 'DopoilcorsoController@index')->name('dopoilcorso');
 
-Route::get('/campgratuito', function () {
-    return view('campgratuito');
-})->name('campgratuito');;
+Route::get('/campgratuito', 'CampgratuitoController@index')->name('campgratuito');;
 
-Route::get('/candidatiora', function () {
-    return view('candidatiora');
-})->name('candidatiora');;
+Route::get('/candidatiora', 'CandidatioraController@index')->name('candidatiora');;
 

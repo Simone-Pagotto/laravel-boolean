@@ -7,7 +7,8 @@
             ['pathId' => 'corso', 'displayText' => 'Corso'],
             ['pathId' => 'dopoilcorso', 'displayText' => 'Dopo Il Corso'],
             ['pathId' => 'campgratuito', 'displayText' => 'Camp Gratuito'],
-            ['pathId' => 'candidatiora', 'displayText' => 'Candidati Ora'],
+            ['pathId' => 'utenti', 'displayText' => 'Utenti'],
+            ['pathId' => 'candidatiora', 'displayText' => 'Candidati Ora'],          
         ]
 
     ];

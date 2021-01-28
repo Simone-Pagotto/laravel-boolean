@@ -9,6 +9,7 @@
                     <p>{{ $user['first_name'] }} {{ $user['last_name'] }}</p>
                     <p>{{ $user['email'] }}</p>
                     <p>{{ $user['gender'] }}</p>
+                    <a href="/utenti/{{$user['id']}}">Vedi Dettagli</a>
                 </div>
             </li>
         @endforeach

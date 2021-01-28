@@ -18,4 +18,13 @@ class UtentiController extends Controller
 
         /* return View::make('utenti', compact('data')); */ //Se passo i dati con la classe View nelle Facades
     }
+
+    //secondo metodo che mi identifica un utente singolo dandomi maggiori dati/descrizioni
+    public function show($id) {
+
+        $dato = Utente::find($id);
+
+        return view('utente', compact('dato'));
+
+    }
 }
